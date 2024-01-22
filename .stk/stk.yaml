@@ -1,0 +1,28 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: demo-loading-test5
+  description: app demo
+  starter: loading-test/springbot@3.0.0/spring-starter
+  stack-version-id: 01HM9N8TCZT9Q1S2RWFH18FWNJ
+  stack: springbot@3.0.0
+spec:
+  type: app
+  plugins:
+    - name: loading-test/springbot@3.0.0/app-spring@0.0.1
+      alias: app-spring-1705945225927
+      plugin-version-id: 01HM9M6Y728CEJV8JJNVQWR9MG
+      stack-version-id: 01HM9N8TCZT9Q1S2RWFH18FWNJ
+      type: app
+      inputs:
+        resource: Client
+        method: GET
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/evellynzup/demo-loading-test5.git
